@@ -1,0 +1,86 @@
+{
+  "artwork-1": {
+    "position": {
+      "x": 0,
+      "y": 3.1,
+      "z": -14.8
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "scale": {
+      "x": 5.2,
+      "y": 5.2,
+      "z": 5.2
+    },
+    "borderWidth": 0.04,
+    "title": "Scène du Puits",
+    "artist": "Les Hommes Préhistoriques",
+    "description": "La scène du Puits est une peinture rupestre située dans la grotte de Lascaux, en France."
+  },
+  "artwork-2": {
+    "position": {
+      "x": 0,
+      "y": 3.1,
+      "z": 14.8
+    },
+    "rotation": {
+      "x": 0,
+      "y": 180,
+      "z": 0
+    },
+    "scale": {
+      "x": 3.3,
+      "y": 3.3,
+      "z": 3.3
+    },
+    "borderWidth": 0.04,
+    "title": "La Panneau des Lions",
+    "artist": "Les Hommes Préhistoriques",
+    "description": "Le Panneau des Lions est une peinture rupestre située dans la grotte de Chauvet, en France. "
+  },
+  "artwork-3": {
+    "position": {
+      "x": -14.8,
+      "y": 3.1,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 90,
+      "z": 0
+    },
+    "scale": {
+      "x": 3.8,
+      "y": 3.8,
+      "z": 3.8
+    },
+    "borderWidth": 0.04,
+    "title": "Cueva de las Manos",
+    "artist": "Les Hommes Préhistoriques",
+    "description": "Cueva de las Manos est une série de peintures rupestres située à Santa Cruz, en Argentine."
+  },
+  "artwork-4": {
+    "position": {
+      "x": 14.8,
+      "y": 3.1,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": -90,
+      "z": 0
+    },
+    "scale": {
+      "x": 4.4,
+      "y": 4.4,
+      "z": 4.4
+    },
+    "borderWidth": 0.04,
+    "title": "Scène de Combat",
+    "artist": "Les Hommes Préhistoriques",
+    "description": "La scène de combat est une peinture rupestre située à Bhimbetka, en Inde."
+  }
+}
