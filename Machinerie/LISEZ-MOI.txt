@@ -1,0 +1,147 @@
+# GALERIE D'URVAL - MANUEL UTILISATEUR
+
+## 🎨 INTRODUCTION
+La Galerie d'Urval est une galerie d'art virtuelle en 3D développée avec A-Frame, permettant une immersion complète dans un espace d'exposition. Cette application offre deux modes d'utilisation : visiteur et administrateur.
+
+## 👤 MODE VISITEUR (ÉLÈVE)
+
+### Navigation dans la galerie
+- **Déplacement** : Touches ZQSD ou flèches directionnelles
+  - Z / ↑ : Avancer
+  - S / ↓ : Reculer  
+  - Q / ← : Tourner à gauche
+  - D / → : Tourner à droite
+- **Regarder autour** : Mouvement de la souris (cliquer-glisser)
+- **Course** : Maintenir Shift pendant le déplacement pour accélérer
+
+### Interaction avec les œuvres
+- **Visualisation du cartel** : Cliquez gauche sur un tableau pour afficher les informations
+  - Titre de l'œuvre
+  - Nom de l'artiste
+  - Description détaillée
+- **Audio-description** : Si disponible, le lecteur audio apparaît automatiquement à gauche
+  - ▶/⏸ : Lecture/pause
+  - ⟲/⟳ : Reculer/avancer de 10 secondes
+  - Curseur : Navigation dans la piste audio
+  - 🔊 : Contrôle du volume
+- **Plein écran** : Cliquez sur l'icône ⛶ dans le cartel pour voir l'œuvre en grand format
+  - ✕ ou Échap : Fermer le plein écran
+
+### Interface utilisateur
+- **Panneau d'aide** : Apparaît au démarrage avec les contrôles de base
+  - ✕ ou Échap : Fermer l'aide
+- **Boutons admin** : Visibles en bas à gauche de l'écran
+  - 🔒 Admin : Ouvrir la fenêtre de connexion
+  - 🎨 Galerie : Ouvrir le panel de création de galerie
+  - 📁 Gérer : Ouvrir le panel de gestion des fichiers
+
+## 🔧 MODE ADMINISTRATEUR (ENSEIGNANT)
+
+### Appuyez sur la touche ²
+1. Cliquez sur le bouton 🔒 Admin en bas à gauche
+2. Entrez le mot de passe (admin)
+3. Cliquez sur Valider ou appuyez sur Entrée
+4. Le bouton change d'apparence pour indiquer la connexion réussie
+
+### Panel d'édition d'œuvre
+Accessible en cliquant sur un tableau lorsque connecté en tant qu'admin.
+
+#### Onglet Infos
+- **Titre** : Modifier le nom de l'œuvre
+- **Artiste** : Modifier le nom de l'artiste
+- **Description** : Modifier la description détaillée
+
+#### Onglet Image
+- **Aperçu actuel** : Voir l'image actuellement associée
+- **Changer l'image** : Télécharger une nouvelle image (JPG, PNG, SVG, WebP, max 5 MB)
+  - Après sélection, l'aperçu se met à jour immédiatement
+  - Pour sauvegarder définitivement, utiliser le bouton "Sauvegarder"
+
+#### Onglet Audio
+- **Audio existant** : Voir et supprimer l'audio actuel
+- **Téléversement** : 
+  1. Sélectionner un fichier audio (MP3, WAV, OGG, max 10 MB)
+  2. Cliquer sur "Télécharger audio-{N}.ext"
+  3. Déplacer le fichier téléchargé dans le dossier `assets/audiodescription/`
+  4. Rafraîchir la page pour prendre en compte le nouvel audio
+
+#### Onglet Position & Taille
+- **Position (X, Y, Z)** : 
+  - X : Mouvement latéral (-20 à 20)
+  - Y : Hauteur (0 à 7) 
+  - Z : Profondeur (-20 à 20)
+- **Rotation (Y)** : Rotation autour de l'axe vertical (-180° à 180°)
+- **Échelle** : Taille relative (0.1x à 10x)
+- **Bordure** : Épaisseur de la cadre en mètres (0.01m à 1m)
+
+#### Sauvegarde
+- Cliquez sur le bouton bleu "Sauvegarder" en bas pour enregistrer toutes les modifications
+- Le bouton "✕" ferme le panel sans sauvegarder
+
+### Panel de création de galerie
+Accessible via le bouton 🎨 Galerie lorsqu'connecté en tant qu'admin.
+
+#### Onglet Galerie
+- **Nombre de tableaux** : Choisissez combien de tableaux afficher (4, 8, 12, 16, 20, 24, 28, 32)
+  - Distribution équitable sur les 4 murs
+- **Générer la galerie** : Crée la configuration sélectionnée (⚠️ supprime tous les tableaux existants)
+- **Supprimer tous les tableaux** : Efface complètement la galerie actuelle
+
+#### Onglet Réglages
+- **Échelle des tableaux** : Taille globale de tous les tableaux
+- **Épaisseur bordures** : Largeur uniforme de toutes les cadres
+- **Hauteur Y** : Position verticale centrale de tous les tableaux
+- **Espacement** : Distance entre les tableaux sur chaque mur
+- **Créer un tableau** : Ajoute un nouveau tableau devant votre position actuelle
+
+#### Onglet Import-Export
+- **Exporter la configuration** : Télécharge un fichier JSON contenant toutes les métadonnées
+- **Importer une configuration** : Restaure une configuration depuis un fichier JSON
+
+### Panel de gestion des fichiers
+Accessible via le bouton 📁 Gérer lorsqu'connecté en tant qu'admin.
+
+#### Onglet Images
+Liste toutes les images uploadées et sauvegardées dans le navigateur
+- Permet de voir quelles images sont associées à quelles œuvres
+- Utile pour gérer le stockage local
+
+#### Onglet Audios
+Liste tous les fichiers audio uploadés et sauvegardés dans le navigateur
+- Permet de voir quels audios sont associés à quelles œuvres
+- Utile pour gérer le stockage local
+
+## 📁 STRUCTURE DE FICHIERS IMPORTANTE
+
+```
+Machinerie/
+├── index.html              # Structure principale de la galerie
+├── js/
+│   └── main.js             # Logique d'interactivité
+├── css/
+│   └── style.css           # Styles personnalisés
+├── assets/		    
+│   ├── textures/           # Textures murales, sols, plafonds
+│   ├── tableaux/           # Images des œuvres d'art
+│   └── audiodescription/   # Fichiers audio des descriptions
+└─ LISEZ-MOI.txt            # Ce fichier
+
+
+## ⚙️ PERSONNALISATION DE LA GALERIE
+
+### Ajout manuel d'œuvres
+Pour ajouter des œuvres sans passer par l'interface admin :
+1. Placez vos images dans `assets/tableaux/` avec le nom `tableau-X.jpeg` (X = numéro)
+2. Placez vos audio dans `assets/audiodescription/` avec le nom `audio-X.mp3`
+3. Placez vos cartels dans `assets/cartels/` avec le nom `cartel-X.json`
+4. Sauvegarder les métadonnées modifiées (position, cartels) en écrasant `assets/tableaux/configuration.json`
+
+
+### Pour les administrateurs
+- Toujours sauvegarder après avoir effectué des modifications
+- Exportez votre configuration depuis le mode admin pour modifier les métadonnées (configuration.json)
+- Testez les changements en mode visiteur après édition
+- Les fichiers uploadés doivent être placés manuellement dans les dossiers appropriés pour persister après rafraîchissement (autrement ils seront stockés temporairement dans votre navigateur)
+
+---
+*Galerie d'Urval - © Urval Neto - Licence CC BY-NC-SA 4.0*
