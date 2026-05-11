@@ -1,0 +1,49 @@
+=======================================================================
+LICENCE : CREATIVE COMMONS ATTRIBUTION - PAS D'UTILISATION COMMERCIALE 
+          - PARTAGE DANS LES MÊMES CONDITIONS 4.0 INTERNATIONAL
+=======================================================================
+
+Projet : Galerie d'Urval
+Auteur : Urval Neto
+Date : 2026
+
+-----------------------------------------------------------------------
+
+Ce travail est mis à disposition selon les termes de la Licence Creative 
+Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les 
+Mêmes Conditions 4.0 International (CC BY-NC-SA 4.0).
+
+VOUS ÊTES LIBRE DE :
+- Partager : copier, distribuer et communiquer le matériel par tous 
+  moyens et sous tous formats.
+- Adapter : remixer, transformer et créer à partir du matériel.
+
+SELON LES CONDITIONS SUIVANTES :
+- Attribution (BY) : Vous devez créditer l'œuvre, intégrer un lien vers 
+  la licence et indiquer si des modifications ont été effectuées. 
+- Pas d’Utilisation Commerciale (NC) : Vous n'êtes pas autorisé à faire 
+  un usage commercial de cette œuvre, tout ou partie du matériel la 
+  composant.
+- Partage dans les Mêmes Conditions (SA) : Dans le cas où vous effectuez 
+  un remix, une transformation ou une adaptation, vous devez diffuser 
+  l'œuvre modifiée sous la même licence que l'originale et en iter l'auteur.
+
+TEXTE COMPLET DE LA LICENCE :
+https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.fr
+
+-----------------------------------------------------------------------
+NOTE SUR LES COMPOSANTS TIERS :
+-----------------------------------------------------------------------
+Cette simulation utilise la bibliothèque Three.js (licence MIT). 
+La présente licence CC BY-NC-SA s'applique exclusivement à la logique 
+de programmation spécifique créée par l'auteur, au design de la galerie, 
+à la structure des scènes 3D et aux assets originaux inclus dans ce projet.
+=======================================================================
+
+<!--
+  Licence : CC BY-NC-SA 4.0
+  Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International
+  https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+  Auteur : Urval Neto
+-->

@@ -1,0 +1,93 @@
+{
+  "artwork-1": {
+    "position": {
+      "x": 0,
+      "y": 3,
+      "z": -14.8
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "scale": {
+      "x": 4.6,
+      "y": 4.6,
+      "z": 4.6
+    },
+    "borderWidth": 0.03
+  },
+  "artwork-2": {
+    "position": {
+      "x": 0,
+
+      "y": 3,
+      "z": 14.8
+    },
+    "rotation": {
+      "x": 0,
+      "y": 180,
+      "z": 0
+    },
+    "scale": {
+      "x": 3,
+      "y": 3,
+      "z": 3
+    },
+    "borderWidth": 0.03
+  },
+  "artwork-3": {
+    "position": {
+      "x": -14.8,
+      "y": 3,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 90,
+      "z": 0
+    },
+    "scale": {
+      "x": 3.4,
+      "y": 3.4,
+      "z": 3.4
+    },
+    "borderWidth": 0.03
+  },
+  "artwork-4": {
+    "position": {
+      "x": 14.8,
+      "y": 3,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": -90,
+      "z": 0
+    },
+    "scale": {
+      "x": 4.1,
+      "y": 4.1,
+      "z": 4.1
+    },
+    "borderWidth": 0.03
+  },
+  "artwork-5": {
+    "position": {
+      "x": -14.9,
+      "y": 3,
+      "z": -5.4
+    },
+    "rotation": {
+      "x": 0,
+      "y": 90,
+      "z": 0
+    },
+    "scale": {
+      "x": 5.5,
+      "y": 5.5,
+      "z": 5.5
+    },
+    "borderWidth": 0.03
+  }
+}
